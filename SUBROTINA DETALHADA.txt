@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <locale.h>
+
+//FUNÇÃO DO PARAMETRO 1
+int soma(int x, int y) 
+
+{
+    int res;
+
+    res= x + y;
+
+    return res;
+
+}
+//FUNÇÃO DO PARAMETRO 2 
+int dobro(int x)
+{
+    int conta;
+
+    conta= 2 * x;
+
+    return conta;
+}
+
+
+void main()
+
+{
+    int x1,x2;
+
+
+    printf("Digite os 2 numeros para realizar a conta:  ");
+    scanf("%d%d",&x1,&x2);
+
+    printf("\n O dobro do primeiro numero  digitado é: %d ",dobro(x1));
+    printf("\n O dobro do segundo numero  digitado é: %d ",dobro(x2));
+    printf("\n a soma dos numeros digitados é: %d",soma(x1,x2));
+    
+}
